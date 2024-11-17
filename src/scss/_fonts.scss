@@ -1,0 +1,4 @@
+@use "mixins" as *;
+
+@include font-face("PublicSans", "../fonts/PublicSansRegular", 400, normal);
+@include font-face("LibreBaskerville", "../fonts/LibreBaskervilleRegular", 400, normal);

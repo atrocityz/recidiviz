@@ -1,0 +1,19 @@
+// colors
+:root {
+  // base
+  --font-family: "PublicSans", sans-serif;
+  --second-family: "LibreBaskerville", sans-serif;
+  --content-width: 1152px;
+  --container-offset: 64px;
+  --offset: 32px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // sizes
+  --main-size: 13px;
+  --second-size: 15px;
+
+  // colors
+  --light-color: #fff;
+  --accent-color: #00a1ff;
+  --active-color: #e00e00;
+}
