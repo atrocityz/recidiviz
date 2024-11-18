@@ -1,0 +1,39 @@
+.where {
+  padding: 155px 0 133px;
+  background-color: #001f1f;
+
+  &__content {
+    grid-column: 4 span;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 43px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 52px;
+    letter-spacing: 0.03em;
+    color: var(--light-color);
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 37px;
+    max-width: 326px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--light-color);
+  }
+
+  &__btn {
+    border: none;
+    background-color: #00665f;
+    font-size: 14px;
+  }
+
+  &__map {
+    grid-column: 7 / 5 span;
+  }
+}
