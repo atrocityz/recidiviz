@@ -1,9 +1,26 @@
+@use "../mixins" as *;
+
 .where {
   padding: 155px 0 133px;
   background-color: #001f1f;
 
+  @include mobile {
+    padding: 120px 0 100px;
+  }
+
+  &__container {
+    @include tablet {
+      text-align: center;
+    }
+  }
+
   &__content {
     grid-column: 4 span;
+
+    @include tablet {
+      margin-bottom: var(--offset);
+      grid-column: 12 span;
+    }
   }
 
   &__title {
@@ -15,6 +32,10 @@
     line-height: 52px;
     letter-spacing: 0.03em;
     color: var(--light-color);
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
   }
 
   &__descr {
@@ -25,6 +46,11 @@
     font-size: 18px;
     line-height: 28px;
     color: var(--light-color);
+
+    @include tablet {
+      margin-bottom: 25px;
+      max-width: 100%;
+    }
   }
 
   &__btn {
@@ -35,5 +61,9 @@
 
   &__map {
     grid-column: 7 / 5 span;
+
+    @include tablet {
+      grid-column: 12 span;
+    }
   }
 }

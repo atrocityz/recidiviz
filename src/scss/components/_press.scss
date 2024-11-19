@@ -17,6 +17,10 @@
     line-height: 38px;
     letter-spacing: 0.04em;
     color: var(--dark-color);
+
+    @include mobile {
+      font-size: 24px;
+    }
   }
 
   &__btn {
@@ -30,6 +34,10 @@
 
   &__item {
     grid-column: 4 span;
+
+    @include mobile {
+      grid-column: 6 span;
+    }
   }
 }
 

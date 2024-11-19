@@ -25,6 +25,10 @@
     align-items: center;
     gap: 51px;
     margin-right: var(--offset);
+
+    @include small-tablet {
+      gap: 30px;
+    }
   }
 
   &__link {
@@ -43,6 +47,10 @@
 
     &:active {
       color: var(--active-color);
+    }
+
+    @include small-tablet {
+      display: none;
     }
   }
 }

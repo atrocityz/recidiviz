@@ -1,3 +1,5 @@
+@use "../mixins" as *;
+
 .info {
   position: relative;
   display: flex;
@@ -6,24 +8,32 @@
 
   &::before {
     content: "";
-    flex-shrink: 0;
+    flex-shrink: 1;
     width: 287px;
     height: 100%;
     background-image: url("../img/info-1.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include mobile {
+      width: 120px;
+    }
   }
 
   &::after {
     content: "";
-    flex-shrink: 0;
+    flex-shrink: 1;
     width: 287px;
     height: 100%;
     background-image: url("../img/info-2.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include mobile {
+      width: 120px;
+    }
   }
 
   &__content {

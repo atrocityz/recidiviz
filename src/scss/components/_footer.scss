@@ -12,6 +12,14 @@
     &:last-child {
       grid-column: 11 / 2 span;
     }
+
+    @include mobile {
+      grid-column: 3 span;
+
+      // &:last-child {
+      //   grid-column: 11 / 4 span;
+      // }
+    }
   }
   &__title {
     position: relative;

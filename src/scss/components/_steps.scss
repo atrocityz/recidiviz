@@ -15,6 +15,14 @@
     letter-spacing: 0.04em;
     text-align: center;
     color: var(--dark-color);
+
+    @include small-tablet {
+      font-size: 26px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   &__list {

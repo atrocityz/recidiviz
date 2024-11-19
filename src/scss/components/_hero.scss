@@ -12,8 +12,20 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @include small-tablet {
+    padding-top: 150px;
+  }
+
+  &__container {
+    margin-bottom: var(--offset);
+  }
+
   &__content {
     grid-column: 6 span;
+
+    @include mobile {
+      grid-column: 7 span;
+    }
   }
 
   &__title {
@@ -23,6 +35,15 @@
     line-height: 44px;
     letter-spacing: 0.03em;
     font-weight: 400;
+
+    @include small-tablet {
+      font-size: 30px;
+    }
+
+    @include mobile {
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 
   &__descr {
@@ -30,11 +51,25 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
+
+    @include small-tablet {
+      font-size: 16px;
+    }
+
+    @include mobile {
+      font-size: var(--main-size);
+    }
   }
 
   &__bottom-container {
     margin-top: auto;
     width: 100%;
+  }
+
+  &__list {
+    @include mobile {
+      gap: 20px;
+    }
   }
 
   &__subtitle {
@@ -46,6 +81,10 @@
 
   &__item {
     grid-column: 2 span;
+
+    @include mobile {
+      grid-column: 4 span;
+    }
   }
 
   &__link {
@@ -71,6 +110,10 @@
     &:active {
       border-color: var(--active-color);
       color: var(--active-color);
+    }
+
+    @include mobile {
+      padding-top: 5px;
     }
   }
 }
